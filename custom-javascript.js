@@ -48,4 +48,10 @@ flex-basis: ${basis};
   `.trim();
 }
 
+function copyCSS() {
+   navigator.clipboard.writeText(output.textContent).then(() => {
+      alert("CSS copied!");
+   });
+}
+
 updateFlexbox();
